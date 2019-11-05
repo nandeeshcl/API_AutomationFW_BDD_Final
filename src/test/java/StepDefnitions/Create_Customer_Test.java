@@ -97,7 +97,7 @@ public class Create_Customer_Test extends TestSetup{
 	public void i_have_email_and_description(String string, String string2) {
 		requestSpecs=requestSpecs.formParam("email",string).formParam("description",string2);      
 		
-		TestUtils.logExtentTest(logInfo, test, "Given", "i_set_as_the_email_in_parameter", "I set the email successfully");
+		TestUtils.logExtentTest(logInfo, test, "Given", "i_set_as_the_email_in_parameter", "I set the email successfullyy");
 		
 		
 	}
