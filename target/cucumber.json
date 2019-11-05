@@ -1,0 +1,233 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 549200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeScenarion(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 3104400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Create_Customer_Test.beforeCustomerAPIScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 16,
+        "name": "Validate Create Customer API with valid auth key",
+        "description": "",
+        "id": "test-customer-api-with-different-functionality;validate-create-customer-api-with-valid-auth-key;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 287100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 248653400,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I have valid auth key",
+            "match": {
+              "location": "Create_Customer_Test.i_have_valid_auth_key()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 10969300,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I have email \"name1@gmail.com\" and description \"name1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"name1@gmail.com\"",
+                  "offset": 13
+                },
+                {
+                  "val": "\"name1\"",
+                  "offset": 47
+                }
+              ],
+              "location": "Create_Customer_Test.i_have_email_and_description(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1669878500,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I send post request",
+            "match": {
+              "location": "Create_Customer_Test.i_send_post_request()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2143000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I verify status code is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 24
+                }
+              ],
+              "location": "Create_Customer_Test.i_verify_status_code_is(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 397015800,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "email in response should be \"name1@gmail.com\" description should be \"name1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"name1@gmail.com\"",
+                  "offset": 28
+                },
+                {
+                  "val": "\"name1\"",
+                  "offset": 68
+                }
+              ],
+              "location": "Create_Customer_Test.email_in_response_should_be_description_should_be(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 16760400,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I verify \"id\" is present",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"id\"",
+                  "offset": 9
+                }
+              ],
+              "location": "Create_Customer_Test.i_verify_is_present(String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Customer_API"
+          },
+          {
+            "name": "@Regression"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 133400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeScenarion(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 166800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Create_Customer_Test.beforeCustomerAPIScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 18,
+        "name": "Test Report",
+        "description": "",
+        "id": "test-customer-api-with-different-functionality;test-report",
+        "after": [
+          {
+            "result": {
+              "duration": 106300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 594200,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I have data",
+            "match": {
+              "location": "Create_Customer_Test.i_have_data()"
+            },
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Customer_API"
+          }
+        ]
+      }
+    ],
+    "name": "Test Customer API with different functionality",
+    "description": "  This features is used to validate Customer API Functionality",
+    "id": "test-customer-api-with-different-functionality",
+    "keyword": "Feature",
+    "uri": "./src/test/Feature_Files/Customer_API.feature",
+    "tags": [
+      {
+        "name": "@Customer_API",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
