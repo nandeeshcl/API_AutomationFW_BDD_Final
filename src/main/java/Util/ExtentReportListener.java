@@ -1,11 +1,5 @@
 package Util;
 
-import java.io.File;
-import java.io.IOException;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.markuputils.ExtentColor;
@@ -62,7 +56,7 @@ public class ExtentReportListener {
 		}
 	}
 
-	private static String getcurrentdateandtime() {
+/*	private static String getcurrentdateandtime() {
 		String str = null;
 		try {
 			DateFormat dateFormat = new SimpleDateFormat("MM/dd/yyyy HH:mm:ss:SSS");
@@ -73,5 +67,5 @@ public class ExtentReportListener {
 		}
 		return str;
 	}
-
+*/
 }

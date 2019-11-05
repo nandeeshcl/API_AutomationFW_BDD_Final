@@ -3,14 +3,10 @@ package Setup;
 import org.aeonbits.owner.ConfigFactory;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
-import org.testng.annotations.BeforeMethod;
-
 import com.aventstack.extentreports.ExtentTest;
 
-import StepDefnitions.Create_Customer_Test;
 import Util.ConfigProperties;
 import Util.ExtentReportListener;
-import cucumber.api.Scenario;
 import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;

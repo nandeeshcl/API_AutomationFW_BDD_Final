@@ -5,10 +5,6 @@ import cucumber.api.java.Before;
 import cucumber.api.java.en.*;
 import Setup.TestSetup;
 import Util.TestUtils;
-import io.restassured.path.json.JsonPath;
-import io.restassured.response.Response;
-import io.restassured.specification.RequestSpecification;
-
 import static io.restassured.RestAssured.*;
 
 import org.apache.log4j.Logger;
@@ -16,8 +12,6 @@ import org.testng.Assert;
 
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.gherkin.model.Feature;
-
-import CustomListener.Listener;
 
 public class Create_Customer_Test extends TestSetup{
 

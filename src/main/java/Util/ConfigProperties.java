@@ -1,8 +1,6 @@
 package Util;
 
 import org.aeonbits.owner.Config;
-import org.aeonbits.owner.Config.Key;
-
 import org.aeonbits.owner.Config.Sources;
 
 @Sources({
