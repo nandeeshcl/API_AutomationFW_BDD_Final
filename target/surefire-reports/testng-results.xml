@@ -2,19 +2,19 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="2989" started-at="2019-11-05T14:30:20Z" finished-at="2019-11-05T14:30:23Z">
+  <suite name="Suite" duration-ms="3884" started-at="2019-11-05T16:04:08Z" finished-at="2019-11-05T16:04:12Z">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:Runner.RunCuke@100fc185]" name="runScenario" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Test" duration-ms="2989" started-at="2019-11-05T14:30:20Z" finished-at="2019-11-05T14:30:23Z">
+    <test name="Test" duration-ms="3884" started-at="2019-11-05T16:04:08Z" finished-at="2019-11-05T16:04:12Z">
       <class name="Runner.RunCuke">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:Runner.RunCuke@100fc185]" name="setUpClass" is-config="true" duration-ms="95" started-at="2019-11-05T14:30:21Z" finished-at="2019-11-05T14:30:21Z">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:Runner.RunCuke@100fc185]" name="setUpClass" is-config="true" duration-ms="97" started-at="2019-11-05T16:04:08Z" finished-at="2019-11-05T16:04:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:Runner.RunCuke@100fc185]" name="runScenario" duration-ms="2326" started-at="2019-11-05T14:30:21Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-11-05T14:30:23Z">
+        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:Runner.RunCuke@100fc185]" name="runScenario" duration-ms="3181" started-at="2019-11-05T16:04:08Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-11-05T16:04:12Z">
           <params>
             <param index="0">
               <value>
@@ -30,7 +30,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:Runner.RunCuke@100fc185]" name="tearDownClass" is-config="true" duration-ms="27" started-at="2019-11-05T14:30:23Z" finished-at="2019-11-05T14:30:23Z">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:Runner.RunCuke@100fc185]" name="tearDownClass" is-config="true" duration-ms="40" started-at="2019-11-05T16:04:12Z" finished-at="2019-11-05T16:04:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
