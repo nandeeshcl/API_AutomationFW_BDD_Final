@@ -39,6 +39,8 @@ public class Create_Customer_Test extends TestSetup{
 	@Before("@Customer_API")  //tag used in FF ,Test name can be anything
 	public void beforeCustomerAPIScenario(Scenario scenario) {
 		
+		
+		
 		//Steps: Obtain feature file name /obtain scenario name/ create lhs node with that feature name (extent)
 		//   create seperate middle node for each scenario with obtained scenario name (test)
 		
@@ -68,12 +70,19 @@ public class Create_Customer_Test extends TestSetup{
 		
 		test = Create_Customer_Test.createNode(scenarioName);
 		
+		
+		
 		//System.out.println("Feature Name-->" + featureName);
 	}
 	
 	
 	@Given("I have valid auth key")
 	public void i_have_valid_auth_key() {
+		
+		
+		test.assignAuthor("Nandeesh");
+		test.assignCategory("Regression Test Cases");
+		
 		
 		log=Logger.getLogger(Create_Customer_Test.class);
 		
@@ -95,6 +104,8 @@ public class Create_Customer_Test extends TestSetup{
 		requestSpecs=requestSpecs.formParam("email",string).formParam("description",string2);      
 		
 		TestUtils.logExtentTest(logInfo, test, "Given", "i_set_as_the_email_in_parameter", "I set the email successfully");
+		
+		
 	}
 
 	@When("I send post request")

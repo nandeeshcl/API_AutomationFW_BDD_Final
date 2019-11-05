@@ -34,6 +34,7 @@ public class TestSetup extends ExtentReportListener {
 		//Logger
 		public static Logger log;
 		
+		//For extent report
 		public static ExtentTest logInfo = null;
 		
 		public static void setup() {

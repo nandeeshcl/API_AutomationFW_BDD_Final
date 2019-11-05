@@ -23,11 +23,11 @@ public class ExtentReportListener {
 	public static ExtentTest test = null;
 
 	public static ExtentReports setUp() {
-		String reportLocation = "./Reports/Extent_Report.html";
+		String reportLocation = "./Reports/Stripe_API_Report.html";
 		report = new ExtentHtmlReporter(reportLocation);
-		report.config().setDocumentTitle("Automation Test Report");
-		report.config().setReportName("Automation Test Report");
-		report.config().setTheme(Theme.DARK);
+		report.config().setDocumentTitle("Stripe_API_Automation Test Report");
+		report.config().setReportName("Stripe_API_Automation Test Report");
+		report.config().setTheme(Theme.STANDARD);
 		// System.out.println("Extent Report location initialized . . .");
 		report.start();
 
@@ -36,7 +36,7 @@ public class ExtentReportListener {
 		extent.setSystemInfo("Application", "Stripe API Testing");
 		extent.setSystemInfo("Operating System", System.getProperty("os.name"));
 		extent.setSystemInfo("User Name", System.getProperty("user.name"));
-		System.out.println("System Info. set in Extent Report");
+		//System.out.println("System Info. set in Extent Report");
 		return extent;
 	}
 

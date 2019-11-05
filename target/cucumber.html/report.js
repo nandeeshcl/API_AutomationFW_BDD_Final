@@ -148,33 +148,4 @@ formatter.result({
 formatter.after({
   "status": "passed"
 });
-formatter.scenario({
-  "name": "Test Report",
-  "description": "",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "name": "@Customer_API"
-    }
-  ]
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I have data",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "Create_Customer_Test.i_have_data()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
-});
 });
