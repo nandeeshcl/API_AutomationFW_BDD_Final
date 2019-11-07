@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Nov 05 19:35:09 IST 2019</td>
+<td>Started on:</td><td>Thu Nov 07 13:16:35 IST 2019</td>
 </tr>
-<tr><td>Total time:</td><td>3 seconds (3461 ms)</td>
+<tr><td>Total time:</td><td>4 seconds (4414 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,32 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Runner.RunCuke.runScenario()'><b>runScenario</b><br>Test class: Runner.RunCuke<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Create Customer API with in-valid auth key", "Test Customer API with different functionality"</td>
+<td><div><pre>java.lang.AssertionError: expected [21312] but found [Invalid API Key provided: sk_test_***************************alid]
+	at StepDefnitions.Create_Customer_Test.the_response_contains_the_message(Create_Customer_Test.java:158)
+	at ?.the response contains the message &quot;21312&quot;(./src/test/Feature_Files/Customer_API.feature:23)
+... Removed 6 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace157004450", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace157004450'><pre>java.lang.AssertionError: expected [21312] but found [Invalid API Key provided: sk_test_***************************alid]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at StepDefnitions.Create_Customer_Test.the_response_contains_the_message(Create_Customer_Test.java:158)
+	at ?.the response contains the message &quot;21312&quot;(./src/test/Feature_Files/Customer_API.feature:23)
+</pre></div></td>
+<td>0</td>
+<td>Runner.RunCuke@56ac3a89</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>

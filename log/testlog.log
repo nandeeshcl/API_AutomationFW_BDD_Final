@@ -53,3 +53,17 @@
 2019-11-05 21:32:29,061 - StepDefnitions.Create_Customer_Test -INFO - Auth Key Entered
 2019-11-05 21:33:01,075 - StepDefnitions.Create_Customer_Test -INFO - Auth Key Entered
 2019-11-05 21:34:09,347 - StepDefnitions.Create_Customer_Test -INFO - Auth Key Entered
+2019-11-06 20:13:29,814 - StepDefnitions.Create_Customer_Test -INFO - Auth Key Entered
+2019-11-06 20:17:51,759 - StepDefnitions.Create_Customer_Test -INFO - Auth Key Entered
+2019-11-06 20:21:57,053 - StepDefnitions.Create_Customer_Test -INFO - Auth Key Entered
+2019-11-06 20:24:54,262 - StepDefnitions.Create_Customer_Test -INFO - Auth Key Entered
+2019-11-06 20:37:02,085 - StepDefnitions.Create_Customer_Test -INFO - Auth Key Entered
+2019-11-06 23:37:52,241 - org.apache.http.impl.client.DefaultHttpClient -INFO - I/O exception (java.net.SocketException) caught when connecting to {s}->https://api.stripe.com:443: Network is unreachable: recv failed
+2019-11-06 23:37:52,245 - org.apache.http.impl.client.DefaultHttpClient -INFO - Retrying connect to {s}->https://api.stripe.com:443
+2019-11-07 10:03:57,597 - StepDefnitions.Create_Customer_Test -INFO - Auth Key Entered
+2019-11-07 12:45:25,840 - StepDefnitions.Create_Customer_Test -INFO - Auth Key Entered
+2019-11-07 12:46:31,336 - StepDefnitions.Create_Customer_Test -INFO - Auth Key Entered
+2019-11-07 13:15:00,865 - StepDefnitions.Create_Customer_Test -INFO - Auth Key Entered
+2019-11-07 13:15:33,061 - StepDefnitions.Create_Customer_Test -INFO - Auth Key Entered
+2019-11-07 13:16:04,899 - StepDefnitions.Create_Customer_Test -INFO - Auth Key Entered
+2019-11-07 13:16:36,395 - StepDefnitions.Create_Customer_Test -INFO - Auth Key Entered

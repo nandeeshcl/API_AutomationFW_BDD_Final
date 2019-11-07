@@ -1,17 +1,21 @@
 package StepDefnitions;
 
-import cucumber.api.Scenario;
-import cucumber.api.java.Before;
-import cucumber.api.java.en.*;
-import Setup.TestSetup;
-import Util.TestUtils;
-import static io.restassured.RestAssured.*;
 
 import org.apache.log4j.Logger;
 import org.testng.Assert;
-
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.gherkin.model.Feature;
+
+import Setup.TestSetup;
+import Util.TestUtils;
+import cucumber.api.Scenario;
+import cucumber.api.java.Before;
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+import static io.restassured.RestAssured.*;
+
+
 
 public class Create_Customer_Test extends TestSetup{
 
@@ -123,8 +127,9 @@ public class Create_Customer_Test extends TestSetup{
 	@Then("email in response should be {string} description should be {string}")
 	public void email_in_response_should_be_description_should_be(String string, String string2) {
                responseJson=response.jsonPath();
-               Assert.assertEquals(responseJson.get("email"),string);
-               Assert.assertEquals(responseJson.get("description"),string2);
+              // System.out.println(responseJson.get("email"));
+               Assert.assertEquals(responseJson.getString("email"),string);
+               Assert.assertEquals(responseJson.getString("description"),string2);
                
           TestUtils.logExtentTest(logInfo, test, "Given", "email in response should be {string} description should be {string}", "Email verified successfully");
                
@@ -137,6 +142,26 @@ public class Create_Customer_Test extends TestSetup{
 		Assert.assertNotNull(response.jsonPath().get("id"));
 		TestUtils.logExtentTest(logInfo, test, "Given", "I verify {string} is present", "ID Field verified successfully");
 	}
+	
+	
+	@Given("I have in-valid auth key")
+	public void i_have_in_valid_auth_key() {
+		requestSpecs=given().auth().basic(configProperty.getInvalidAuthKey(),"");
+	}
+
+	@Then("the response contains the message {string}")
+	public void the_response_contains_the_message(String string) {
+		response.prettyPrint();
+		responseJson=response.jsonPath();
+		//responseJson=response.jsonPath();
+         System.out.println(response.jsonPath().getString("error.message"));
+        Assert.assertEquals(responseJson.getString("error.message"),string);
+	   
+	}
+
+	
+	
+	
 	
 	
 

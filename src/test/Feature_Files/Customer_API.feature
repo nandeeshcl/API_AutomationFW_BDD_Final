@@ -15,5 +15,13 @@ Feature: Test Customer API with different functionality
       | email           | description | statusCode | field |
       | name1@gmail.com | name1       |        200 | id    |
 
+  @Regression
+  Scenario Outline: Validate Create Customer API with in-valid auth key
+    Given I have in-valid auth key
+    When I send post request
+    Then I verify status code is <statusCode>
+    And the response contains the message "Invalid API Key provided: sk_test_***************************alid"
 
-
+    Examples: 
+      | statusCode |
+      |        401 |
